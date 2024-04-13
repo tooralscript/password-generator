@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Password</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Tomorrow:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+
+
+  <div class="container">
+
+    <div class="password-generator">Password Generator</div>
+
+    <div class="div-result">
+      <div class="div-result-left"></div>
+      <div class="div-result-right">
+        <div>
+          <div id="diff-line-4"></div>
+          <div id="diff-line-3"></div>
+          <div id="diff-line-2"></div>
+          <div id="diff-line-1"></div>
+        </div>
+        <i class="fa-solid fa-repeat"></i>
+      </div>
+    </div>
+
+    <button class="button-copy-password">Copy Password_
+      <i class="fa-solid fa-arrow-right"></i>
+      <div class="div-triangle"></div>
+    </button>
+
+    <div class="slidecontainer">
+      <input type="range" min="5" max="100" value="5" class="slider" id="myRange">
+      <div class="value-of-range">Length of password - 5</div>
+    </div>
+
+    <div class="checkbox-container">
+
+      <div>
+        <div>
+          <input type="checkbox" id="up-letters" onclick="displayDifficulty()" checked>
+          <label for="up-letters">Uppercase letters</label>
+        </div>
+
+        <div>
+          <input type="checkbox" id="numbers" onclick="displayDifficulty()" checked>
+          <label for="numbers">Numbers</label>
+        </div>
+
+
+      </div>
+
+      <div>
+
+        <div>
+          <input type="checkbox" id="low-letters" onclick="displayDifficulty()" checked>
+          <label for="low-letters">Lowercase letters</label>
+        </div>
+
+
+        <div>
+          <input type="checkbox" id="symbols" onclick="displayDifficulty()" checked>
+          <label for="symbols">Symbols</label>
+        </div>
+      </div>
+
+
+    </div>
+
+  </div>
+
+  <div class="password-history-container">
+    <div class="header-title">Password history</div>
+
+    <div class="history-passwords-container">
+
+      <div class="template-div">
+        <div class="password-from-local">^d3>~9YDA8s}cWN9L_P^</div>
+        <i class="fa-solid fa-copy"></i>
+      </div>
+
+
+
+
+
+
+    </div>
+    <div class="div-clr-hstr">
+      <span class="span-clr-hstr">Clear history</span>
+    </div>
+
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+  <script src="https://kit.fontawesome.com/9be433b4c3.js" crossorigin="anonymous"></script>
+  <script src="./script.js"></script>
+</body>
+
+</html>
